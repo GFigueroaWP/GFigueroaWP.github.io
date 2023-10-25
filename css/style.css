@@ -32,6 +32,10 @@ body {
     color: var(--color-brand);
 }
 
+.navbar .nav-link.active {
+    color: var(--color-brand);
+}
+
 .background-1{
 
 }
@@ -70,6 +74,19 @@ body {
     background-color: white;
     color: var(--color-brand);
     border-color: var(--color-brand);
+}
+
+.card-custom{
+    background-color: var(--color-brand);
+}
+
+.card-custom .card-custom-image img{
+    width: 100%;
+}
+
+.card-custom .card-custom-content{
+    padding: 5%;
+    color: white;
 }
 @media (min-width: 992px) {
     /* Navbar Responsive Styles */

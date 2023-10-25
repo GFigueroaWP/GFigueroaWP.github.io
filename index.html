@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid flex-lg-column">
@@ -28,8 +28,8 @@
                 aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mx-lg-auto mb-lg-3" href="#">
-                <span class="h3 fw-bold d-block d-lg-none">Guido Figueroa</span>
+            <a class="navbar-brand mx-lg-auto mb-lg-3 align-items-center" href="#">
+                <span class="h3 fw-bold d-block d-lg-none text-white mb-0">Guido Figueroa</span>
                 <img src="./assets/images/perfil-guido.jpg" alt="Imagen de perfil de Guido Figueroa" class="d-none d-lg-block rounded-circle" id="profileImg">
             </a>
             <div class="collapse navbar-collapse" id="navbarToggler">
@@ -44,16 +44,16 @@
                         <a class="nav-link" href="#projects">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Habilidades</a>
+                        <a class="nav-link" href="#skills">Habilidades</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Educación</a>
+                        <a class="nav-link" href="#education">Educación</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Experiencia</a>
+                        <a class="nav-link" href="#experience">Experiencia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Contacto</a>
+                        <a class="nav-link" href="#contact">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -65,10 +65,10 @@
         <section id="home" class="full-height px-lg-5 background-1">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg 8">
-                        <h1 class="display-4 fw-bold">Soy un <span>desarrollador</span> de Concepción, Chile</h1>
+                    <div class="col-lg-8">
+                        <h1 class="display-4 fw-bold" data-aos="fade-in">Soy un <span>desarrollador</span> de Concepción, Chile</h1>
                         <p class="lead">
-                            Soy Guido Figueroa y soy un desarrollador web full stack. Me encanta crear cosas.
+                            Soy Guido Figueroa y soy un desarrollador fullstack. Me encanta crear cosas.
                         </p>
                         <a href="#projects" class="btn btn-brand">Explora mis trabajos</a>
                     </div>
@@ -79,13 +79,61 @@
         <section id="about" class="full-height px-lg-5 background-2">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg 8">
+                    <div class="col-lg-8">
                         <p class="lead">
-                            Soy Guido Figueroa y soy un desarrollador web full stack. Me encanta crear cosas.
+                            Soy un Ingeniero de Ejecución en Computación e Informática recién titulado con una sólida formación en programación, bases de datos y tecnologías web. Durante mi carrera universitaria, desarrollé habilidades de resolución de problemas, trabajo en equipo y liderazgo a través de proyectos prácticos y desafiantes. Me apasiona la tecnología, los videojuegos y el automovilismo, y estoy emocionado de aplicar mis conocimientos para resolver problemas en el mundo real.
                         </p>
-                        <a href="#" class="btn btn-brand">Explora mis trabajos</a>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!--Projects-->
+        <section id="projects" class="full-height px-lg-5 background-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg 8">
+                        <h1 class="fw-bold">Proyectos en los que he trabajado</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card-custom rounded-4">
+                            <div class="card-custom-image rounded-4">
+                                <img class="rounded-4" src="/assets/images/CSim-app.gif" alt="proyecto control sim">
+                            </div>
+                            <div class="card-custom-content">
+                                <h4 class="fw-bold">WebApp gestion de proyectos</h4>
+                                <p>Proyecto de desarrollo web, Desarrollado como proyecto final de carrera. La app esta construida sobre laravel jetstream.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Skills-->
+        <section id="skills" class="full-height px-lg-5 background-2">
+            <div class="container">
+                <div class="row">
+
+                </div>
+            </div>
+        </section>
+        <!--Education-->
+        <section id="education" class="full-height px-lg-5 background-1">
+            <div class="container">
+
+            </div>
+        </section>
+        <!--Experience-->
+        <section id="experience" class="full-height px-lg-5 background-2">
+            <div class="container">
+
+            </div>
+        </section>
+        <!--Contact-->
+        <section id="contact" class="full-height px-lg-5 background-1">
+            <div class="container">
+
             </div>
         </section>
     </div>
@@ -95,6 +143,8 @@
         crossorigin="anonymous"></script>
     <!--Animate on scroll JS-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Custom JS-->
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
