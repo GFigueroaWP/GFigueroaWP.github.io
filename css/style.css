@@ -36,9 +36,9 @@ body {
     color: var(--color-brand);
 }
 
-.background-1{
+/* .background-1{
 
-}
+} */
 .background-2{
     background-color: var(--color-brand);
     color: white;
@@ -80,6 +80,11 @@ body {
     background-color: var(--color-brand);
 }
 
+.card-custom-2{
+    background-color: white;
+    margin-top: 10px;
+}
+
 .card-custom .card-custom-image img{
     width: 100%;
 }
@@ -87,6 +92,24 @@ body {
 .card-custom .card-custom-content{
     padding: 5%;
     color: white;
+}
+
+.card-custom-2 .card-custom-content{
+    padding: 5%;
+    color: var(--color-brand);
+}
+.education{
+    display: flex;
+}
+.education-logo{
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+}
+.contactos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
 }
 @media (min-width: 992px) {
     /* Navbar Responsive Styles */
